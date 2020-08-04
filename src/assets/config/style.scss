@@ -1,0 +1,300 @@
+// Colors Palletes
+$primaryC:  #445c3c;
+$secondC:   #fda77f;
+$thirdC:    #c9d99e;
+$fontC:     #758184;
+$whiteC:    #FFFFFF;
+$background:#FAFAFA;
+
+// Google fonts
+@import
+  url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+.boll_b {
+  font-family: 'Nunito';
+  letter-spacing: 0.15rem;
+  background-color: $background;
+  .header_blog {
+    .list_media {
+      .item_social {
+        cursor: pointer;
+        &:hover {
+          color: $secondC;
+        }
+      }
+    }
+    .search {
+      position: relative;
+      .control_search {
+        border: none;
+        margin: 0 auto;
+        color: $primaryC;
+        padding-bottom: 0;
+        padding-left: 2.5em;
+        background: transparent;
+        border-bottom: 2px solid $fontC;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+          border-bottom: 2px solid $secondC;
+          & + svg {
+            color: $secondC;
+          }
+        }
+      }
+      .icon_search {
+        top: 27%;
+        left: 5%;
+        color: $primaryC;
+        position: absolute;
+      }
+    }
+    .boll_head {
+      padding: 60px 0 0 0;
+      .title_head {
+        margin: 0 auto;
+        font-size: 5.62rem;
+      }
+      .nav_blog {
+        width: 100%;
+        border-bottom: 1px solid #e6e6e6;
+        .link_blog {
+          font-size: 0.87rem;
+          color: $primaryC;
+          padding: 1rem 1rem;
+          font-weight: normal;
+          letter-spacing: 0.3em;
+          outline: none !important;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .articles {
+    .blog_track, .blog_article {
+      .title_blog {
+        font-weight: 600;
+        border-bottom: 1px solid rgba(0,0,0,.1);
+      }
+      .card_track {
+        margin: 30px 0;
+        .card_title {
+          font-weight: 900;
+          color: $fontC;
+        }
+      }
+      .card_article {
+        border: none;
+        position: relative;
+        box-shadow: 0 0 5px $primaryC;
+        transition: all .6s ease-in-out;
+        &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 0 10px $primaryC;
+          .context_article {
+            .title_article {
+              color: $primaryC;
+            }
+          }
+        }
+        .category_tag {
+          top: 2%;
+          left: 0;
+          border: 0;
+          width: 30%;
+          font-size: 90%;
+          color: $primaryC;
+          font-weight: 900;
+          position: absolute;
+          background: $thirdC;
+        }
+        .context_article {
+          padding: 10px 30px;
+          .avatar_post {
+            width: 10%;
+            height: 10%;
+            border-radius: 50%;
+          }
+          .contributor {
+            color: $fontC;
+            font-size: 0.87rem;
+            font-weight: 900;
+            padding-left: 10px;
+          }
+          .title_article {
+            color: $fontC;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .blog_slide {
+      .carousel-caption {
+        text-align: left;
+      }
+    }
+    .pagination_blog {
+      .pagination {
+        .page-link {
+          border: 0;
+          color: $fontC;
+          padding: 0.25rem 1rem;
+          background-color: $background;
+          &:hover {
+            color: $primaryC;
+            background-color: $whiteC; //mudar cor
+          }
+        }
+      }
+    }
+  }
+  .footer_blog {
+    .title_blog {
+      font-weight: 600;
+      border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+    .gallery_insta {
+      width: 25%;
+      z-index: 0;
+      position: relative;
+      .img_insta {
+        width: 100%;
+        cursor: pointer;
+        transition-duration: 500ms;
+      }
+      .overlay {
+        top: 0;
+        left: 0;
+        opacity: 0;
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        position: absolute;
+        transition-duration: 500ms;
+        background: rgba(252, 185, 62, 0.8);
+        .link_follow {
+          position: relative;
+          text-align: center;
+          .link {
+            outline: none;
+            color: $whiteC;
+            font-size: 1rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            line-height: 250px;
+          }
+        }
+      }
+      &:hover {
+        .overlay {
+          opacity: 1;
+        }
+      }
+    }
+  }
+  .subscribe_blog {
+    padding: 20px;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    .btn_send {
+      color: $whiteC;
+      background-color: rgba(57, 58, 75, 0.6);
+      &:hover, &:active {
+        border: 0;
+        outline: 0;
+      }
+    }
+  }
+}
+
+.post_blog {
+  background-color: $background;
+  .card {
+    border: none;
+    .card-img-overlay {
+      padding: 0 1rem;
+      .title_post {
+        font-weight: 900;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .text_post {
+    color: $fontC;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-size: 1.25rem;
+    .quote {
+      font-weight: 600;
+      padding: 2.25rem;
+      line-height: 1.6;
+      border-left: .1875rem solid #155e39;
+    }
+  }
+  .contribuitor {
+    width: 320px;
+    margin: 0 auto;
+    .contributor_avatar {
+      width: 50%;
+      height: auto;
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+    .contributor_name {
+      color: $fontC;
+      font-weight: 600;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    .contribuitor_description {
+      padding: 20px 0;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .boll_b {
+    .articles {
+      .blog_track {
+        .card_track {
+          width: 300px;
+          height: 400px;
+        }
+      }
+    }
+    .subscribe_blog {
+      .form-group {
+        .form-control {
+          width: 25%!important;
+        }
+      }
+    }
+  }
+  .post_blog {
+    .card {
+      .card-img-overlay {
+        top: 20%;
+        .title_post {
+          width: 20%;
+          margin: 0 auto;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .text_post {
+      width: 65%;
+    }
+    .contribuitor {
+      width: 620px;
+      .contributor_avatar {
+        width: 30%;
+      }
+    }
+  }
+}
