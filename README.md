@@ -16,7 +16,7 @@ Desenvolvimento de página Blog, utilizando o conceito básico do React, React R
 | galeria | galeria de imagens com mouse hover para midias sociais |
 | subscribe | formulário básico de subscribe |
 
-![header](https://user-images.githubusercontent.com/44410029/89333512-70c49e80-d66b-11ea-8b82-e2319f9bf9e5.PNG)
+![header](https://user-images.githubusercontent.com/44410029/89334097-648d1100-d66c-11ea-978d-d85e1ca748b0.PNG)
 
 ### Configuração de desenvolvimento :keyboard:
 
